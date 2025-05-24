@@ -1,6 +1,5 @@
 import discord
 from discord.ext import commands
-import random
 intents = discord.Intents.default()
 intents.message_content = True
 bot = commands.Bot(command_prefix='?', intents=intents)
@@ -29,16 +28,54 @@ async def havadurumu_aylik(ctx):
     await ctx.send("Mayıs(yağışlı ve parçalı bulutlu), Haziran(yağışlı ve güneşli), Temmuz(güneşli)")
 
 @bot.command()
-async def mayis_doğa(ctx):
+async def mayis_doga(ctx):
     await ctx.send("Çiçek fırtınası ve güllerin açması ile karşılaşabilirsiniz.")
 
 @bot.command()
-async def haziran_doğa(ctx):
+async def haziran_doga(ctx):
     await ctx.send("Ayın sonlarına doğru gündüzler yavaşça kısalmaya başlayacak.")
 
 @bot.command()
-async def temmuz_doğa(ctx):
+async def temmuz_doga(ctx):
     await ctx.send("Sıcaklıklar iyice yükselecek.")
+
+@bot.command()
+async def mayis_astronomi(ctx):
+    await ctx.send("Mars ve Satürn gezegenleri çok yakınmış gibi gözükecek.")
+
+@bot.command()
+async def haziran_astronomi(ctx):
+    await ctx.send("Jüpiter'in bazı uyduları gözlemlenebilecek.")
+
+@bot.command()
+async def temmuz_astronomi(ctx):
+    await ctx.send("Merkür ve Venüs yakınmış gibi gözükecek.")
+
+@bot.command()
+async def mayis_bayram(ctx):
+    await ctx.send("Gençlik ve Spor Bayramı, Hıdırellez, Anneler Günü, İşçi Bayramı, İstanbul'un Fethi")
+
+@bot.command()
+async def haziran_bayram(ctx):
+    await ctx.send("Kurban Bayramı, Babalar Günü")
+
+@bot.command()
+async def temmuz_bayram(ctx):
+    await ctx.send("Dünya Hukuk Günü")
+
+@bot.command()
+async def mayis_cografya(ctx):
+    await ctx.send("Kuzey Yarım Küre'de gündüzler uzayacak, Güney Yarım Küre'de ise tam tersi yaşanacak.")
+
+@bot.command()
+async def haziran_cografya(ctx):
+    await ctx.send("Yengeç Dönencesi, güneş ışınlarını dik açıyla alacak yani oldukça sıcak olacak.")
+
+@bot.command()
+async def temmuz_cografya(ctx):
+    await ctx.send("Günöte olacak yani Dünya Güneş'e en uzak olduğu konumda bulunacak.")
+
+
 
 
 
